@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Python Foundations – Certificate of Completion</title>
+<style>
+  :root { --ink:#1f2a44; --gold:#b8892b; --paper:#fffdf7; --muted:#5b6478; }
+  * { box-sizing: border-box; }
+  body { margin:0; padding:24px; background:#e9e6dc; font-family: Georgia, "Times New Roman", serif; color:var(--ink); }
+  .cert { max-width: 960px; margin: 0 auto; background: var(--paper); border: 10px double var(--gold); padding: 48px 56px; text-align:center; box-shadow: 0 6px 24px rgba(0,0,0,.15); }
+  .eyebrow { letter-spacing: .3em; text-transform: uppercase; font-size: 13px; color: var(--gold); }
+  h1 { font-size: 40px; margin: 10px 0 4px; }
+  .sub { color: var(--muted); font-style: italic; margin: 0 0 28px; }
+  .name { font-size: 38px; border-bottom: 2px solid var(--gold); display:inline-block; padding: 0 28px 6px; margin: 8px 0 18px; }
+  p { font-size: 17px; line-height: 1.6; margin: 8px 0; }
+  .grade { display:inline-block; margin: 18px 0 8px; padding: 10px 28px; border: 2px solid var(--gold); border-radius: 999px; font-size: 22px; font-weight: bold; }
+  table { margin: 18px auto 6px; border-collapse: collapse; font-size: 15px; }
+  th, td { padding: 6px 16px; border-bottom: 1px solid #e3dcc8; }
+  th { color: var(--muted); font-weight: normal; text-align:left; }
+  td { text-align:right; font-weight: bold; }
+  .foot { display:flex; justify-content: space-between; gap: 16px; margin-top: 34px; font-size: 13px; color: var(--muted); flex-wrap: wrap; }
+  @media print { body { background:#fff; padding:0; } .cert { box-shadow:none; } }
+  @media (max-width: 600px) { .cert { padding: 28px 18px; } h1 { font-size: 28px; } .name { font-size: 26px; } }
+</style>
+</head>
+<body>
+  <main class="cert">
+    <div class="eyebrow">AI-Led Training</div>
+    <h1>Certificate of Completion</h1>
+    <p class="sub">Python Foundations – 5 guided lessons with a final assessment</p>
+
+    <p>This certifies that</p>
+    <div class="name">{{LEARNER_NAME}}</div>
+    <p>has successfully completed all five lessons – Python Basics, Data Structures, Functions &amp; Modules,<br>Classes &amp; Data Models, and Files, Errors &amp; Logging – and passed the final quiz with</p>
+
+    <div class="grade">Grade {{GRADE}} · {{GRADE_LABEL}}</div>
+    <p><strong>{{TOTAL}} / 15</strong> points ({{PERCENT}}%)</p>
+
+    <table>
+      <tr><th>Lesson 1 – Python Basics</th><td>{{L1}} / 3</td></tr>
+      <tr><th>Lesson 2 – Data Structures</th><td>{{L2}} / 3</td></tr>
+      <tr><th>Lesson 3 – Functions &amp; Modules</th><td>{{L3}} / 3</td></tr>
+      <tr><th>Lesson 4 – Classes &amp; Data Models</th><td>{{L4}} / 3</td></tr>
+      <tr><th>Lesson 5 – Files, Errors &amp; Logging</th><td>{{L5}} / 3</td></tr>
+    </table>
+
+    <div class="foot">
+      <span>Date: {{DATE}}</span>
+      <span>Quiz attempt: {{ATTEMPT}}</span>
+      <span>Certificate ID: {{CERT_ID}}</span>
+    </div>
+  </main>
+</body>
+</html>

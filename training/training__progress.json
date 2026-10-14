@@ -1,0 +1,23 @@
+{
+  "learner_name": "",
+  "started_at": "",
+  "current_lesson": 1,
+  "lessons": {
+    "1": { "status": "not_started", "modules_completed": [], "completed_at": null },
+    "2": { "status": "not_started", "modules_completed": [], "completed_at": null },
+    "3": { "status": "not_started", "modules_completed": [], "completed_at": null },
+    "4": { "status": "not_started", "modules_completed": [], "completed_at": null },
+    "5": { "status": "not_started", "modules_completed": [], "completed_at": null }
+  },
+  "quiz": {
+    "status": "locked",
+    "attempt": 0,
+    "current_question": 0,
+    "scores": { "1": null, "2": null, "3": null, "4": null, "5": null },
+    "total": null,
+    "percent": null,
+    "grade": null,
+    "answers": []
+  },
+  "certificate": { "issued": false, "id": null, "issued_at": null }
+}
